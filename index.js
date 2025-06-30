@@ -1,5 +1,6 @@
 const { chromium } = require("playwright");
 const supabase = require("./supabase");
+const sendChat = require("./telegram");
 
 (async () => {
   const browser = await chromium.launch({ headless: true });
